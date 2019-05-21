@@ -33,7 +33,7 @@ namespace ninja.test {
         public void InsertNewDetailInvoice() {
 
             InvoiceManager manager = new InvoiceManager();
-            long id = 1006;
+            long id = 1007;
             Invoice invoice = new Invoice() {
                 Id = id,
                 Type = Invoice.Types.A.ToString()
@@ -65,21 +65,27 @@ namespace ninja.test {
         [TestMethod]
         public void DeleteInvoice() {
 
-            /*
+			/*
               1- Eliminar la factura con id=4
               2- Comprobar de que la factura con id=4 ya no exista
               3- La prueba tiene que mostrarse que se ejecuto correctamente
             */
 
-            #region Escribir el código dentro de este bloque
+			#region Escribir el código dentro de este bloque
+			var manager = new InvoiceManager();
 
-            throw new NotImplementedException();
+	        manager.Delete(4);
 
-            #endregion Escribir el código dentro de este bloque
+	        var existeFactura4 = manager.Exists(4);
 
-        }
+	        Assert.IsFalse(existeFactura4);
 
-        [TestMethod]
+
+			#endregion Escribir el código dentro de este bloque
+
+		}
+
+		[TestMethod]
         public void UpdateInvoiceDetail() {
 
             long id = 1003;

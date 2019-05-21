@@ -49,21 +49,20 @@ namespace ninja.model.Manager {
 
         }
 
-        public void UpdateDetail(long id, IList<InvoiceDetail> detail) {
+		public void UpdateDetail(long id, IList<InvoiceDetail> detail){
+			/*
+			Este método tiene que reemplazar todos los items del detalle de la factura
+			por los recibidos por parámetro
+			*/
 
-            /*
-              Este método tiene que reemplazar todos los items del detalle de la factura
-              por los recibidos por parámetro
-             */
+			#region Escribir el código dentro de este bloque
 
-            #region Escribir el código dentro de este bloque
+			var invoice = this.GetById(id);
+			invoice.AddDetails(detail);
 
-            throw new NotImplementedException();
+			#endregion Escribir el código dentro de este bloque
+		}
 
-            #endregion Escribir el código dentro de este bloque
-
-        }
-
-    }
+	}
 
 }

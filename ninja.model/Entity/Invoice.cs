@@ -61,6 +61,14 @@ namespace ninja.model.Entity {
 
         }
 
-    }
+	    public void AddDetails(IList<InvoiceDetail> details){
+		    this.DeleteDetails();
+
+		    details.ToList()
+			    .ForEach(AddDetail)
+			;
+	    }
+
+	}
 
 }

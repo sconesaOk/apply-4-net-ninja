@@ -1,0 +1,5 @@
+C:\DEV\apply-4-net-ninja-master\ninja.model\bin\Debug\ninja.model.dll
+C:\DEV\apply-4-net-ninja-master\ninja.model\bin\Debug\ninja.model.pdb
+C:\DEV\apply-4-net-ninja-master\ninja.model\obj\Debug\ninja.model.csprojResolveAssemblyReference.cache
+C:\DEV\apply-4-net-ninja-master\ninja.model\obj\Debug\ninja.model.dll
+C:\DEV\apply-4-net-ninja-master\ninja.model\obj\Debug\ninja.model.pdb
